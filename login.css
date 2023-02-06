@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0617;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #c5c5c5;
+}
+
+header {
+  width: 80%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  background-color: #13238be4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+form input {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.5rem;
+  margin-bottom: 1rem;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: #ccc;
+  margin-top: 0.5rem;
+  line-height: 0;
+  position: relative;
+}
+
+form input:focus::placeholder {
+  font-size: 0.7rem;
+  position: fixed;
+  top:0;
+  transition: font-size 0.5s, position 0.2s;
+}
+
+form label {
+  font-size: 1.2rem;
+}
+
+form button {
+  font-size: 1rem;
+  max-width: 400px;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 0.8rem;
+  cursor: pointer;
+}
+
+.nameInput, .emailInput, .passwordInput {
+  border: 2px solid #8a1414;
+}
